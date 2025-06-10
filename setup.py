@@ -17,7 +17,7 @@ if platform.python_implementation() == "CPython":
 
         class BDistWheel(bdist_wheel):
             def finalize_options(self):
-                self.py_limited_api = f"cp3{sys.version_info[1]}"
+                # self.py_limited_api = f"cp3{sys.version_info[1]}"
 
                 super().finalize_options()
 
